@@ -1,14 +1,30 @@
-@import base;
-@import components;
-@import utilities;
+@import "tailwindcss";
 
-:root{
-  --gold:#e8b84b;
-  --purple:#8b5cf6;
-  --dark:#1a1a2e;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap');
+
+:root {
+  --bg: #1c1410;
+  --card: #2d1f1a;
+  --border: #3d2a22;
+  --primary: #f4a261;
+  --accent: #e76f51;
+  --text: #fef9f0;
+  --muted: #a89080;
+  --gold: #f4a261;
 }
 
-body{
-  background-color: var(--dark);
-  color: #e8e8e8;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: 'Poppins', sans-serif;
+}
+
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
 }
